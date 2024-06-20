@@ -30,3 +30,4 @@ Parameter data can be found the the J. Statistical Software Paper listed above.
 
 # An example of BARS in experimental data.
 I have successfully used BARS in my work (Characterization and closed-loop control of infrared thalamocortical stimulation produces spatially constrained single-unit responses. PNAS Nexus 3(2):pgae082 DOI: https://doi.org/10.1093/pnasnexus/pgae082) with a figure reproduced below:
+![alt text](https://github.com/bscoventry/Bayesian-Adaptive-Regression-Splines/blob/main/BarsExample.png?raw=true)
