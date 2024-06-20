@@ -10,6 +10,11 @@ Behseta, S. and Kass, R.E. (2005, Statistics in Medicine) Testing equality of se
 firing-rate curves across multiple experimental conditions
 
 # Compiling Mex File
+To run BARS in matlab, nlsd.mex needs to be compiled. Do so first by running in Matlab:
+```
+mex nlsd_mex.c
+```
+Successful completion will produce a nlsd_mex.mexw64 file in the current working directory.
 
 # Example Usage
 ```
@@ -21,3 +26,7 @@ bp.prior_id = 'POISSON';
 bp.dparams = 4;
 fit2 = barsP(example(:,2),[example(1,1) example(end,1)],60,bp);
 ```
+Parameter data can be found the the J. Statistical Software Paper listed above.
+
+# An example of BARS in experimental data.
+I have successfully used BARS in my work (Characterization and closed-loop control of infrared thalamocortical stimulation produces spatially constrained single-unit responses. PNAS Nexus 3(2):pgae082 DOI: https://doi.org/10.1093/pnasnexus/pgae082) with a figure reproduced below:
