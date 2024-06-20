@@ -8,3 +8,16 @@ Regression Splines (BARS) in C with S and R Wrappers
 
 Behseta, S. and Kass, R.E. (2005, Statistics in Medicine) Testing equality of several functions: Analysis of single-unit
 firing-rate curves across multiple experimental conditions
+
+# Compiling Mex File
+
+# Example Usage
+```
+load example.data               %Needs to be done this way, example.data is a little finicky 
+fit1 = barsP(example(:,2),[example(1,1) example(end,1)],60);       %Simple fit with defaults
+% Parameters can be changed by accessing the default parameters structure and changing parameter values using standard Matlab dot notation.
+bp = defaultParams;
+bp.prior_id = 'POISSON';
+bp.dparams = 4;
+fit2 = barsP(example(:,2),[example(1,1) example(end,1)],60,bp);
+```
